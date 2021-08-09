@@ -15,15 +15,15 @@ const port = 3000;
 const assistant = new AssistantV2({
   version: '2021-06-14',
   authenticator: new IamAuthenticator({
-    apikey: 'aZWCyZYpnKSdlyir8KZzxZCqtAwJbvCqZXklM-CC1rhO',
+    apikey: '',
   }),
-  serviceUrl: 'https://api.us-south.assistant.watson.cloud.ibm.com/instances/493361d8-7bc4-4acf-8f14-8dfb66e0a394',
+  serviceUrl: '',
 });
 
 app.get("/watson/session/", async (req, res) => {
    try {
        const session = await assistant.createSession({
-           assistantId: '659cacde-07ee-4485-b033-d22d6c8a5939'
+           assistantId: ''
        })
        res.json(session['result'])
    } catch (e) {
