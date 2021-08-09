@@ -38,7 +38,7 @@ app.post('/watson/message/', async (req, res) => {
 	// payload
 
 	const payload = { 
-    assistantId: '659cacde-07ee-4485-b033-d22d6c8a5939',
+    assistantId: '',
     sessionId,
     input: {
    		 message_typer: "text",
