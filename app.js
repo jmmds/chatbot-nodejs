@@ -17,7 +17,7 @@ const assistant = new AssistantV2({
   authenticator: new IamAuthenticator({
     apikey: '',
   }),
-  serviceUrl: '',
+  serviceUrl: 'https://api.us-east.assistant.watson.cloud.ibm.com',
 });
 
 app.get("/watson/session/", async (req, res) => {

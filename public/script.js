@@ -19,8 +19,8 @@ const InsertTemplateInTheChat = (template) => {
 };
 
 const getWatsonMessageAndInsertTemplate = async (message = '') => {
-  const uri = 'http://192.168.1.14:3000/watson/message/';
-  var sessionId = 'http://192.168.1.14:3000/watson/session/';
+  const uri = 'http://localhost:3000/watson/message/';
+  var sessionId = 'http://localhost:3000/watson/session/';
 
   const response = await (await fetch(uri, {
     method: 'POST',
